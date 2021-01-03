@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>주문서 작성하기</title>
+	<style>
+		body{
+		margin: 20px 25px;
+		}
+		fieldset{
+			padding-bottom: 0px;
+			margin-bottom: 15px;
+		}
+		fieldset legend{
+			color: rgb(238, 121, 12);
+			font-size: 18px;
+			font-weight: bold;
+		}
+		ul li{
+			list-style: none; /*목록 스타일 없애기*/
+			padding-bottom: 10px;
+		}
+		.title{
+			font-weight: bold;
+			float: left;
+			text-align: left;
+			width: 80px; /*너비 지정으로 textbox 정렬*/
+		}
+		.center{
+			text-align: center; /*버튼 가운데정렬*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>상품 주문서</h1>
+		<fieldset>
+			<legend>개인 정보</legend>
+			<ul>
+				<li><label for="name" class="title">이름</label>
+					<input type="text" id="name" placeholder="여백없이 입력" required></li>
+				<li><label for="tel" class="title">연락처</label>
+					<input type="tel" id="tel" placeholder="연락가능한 번호" required></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>배송지 정보</legend>
+			<ul>
+				<li><label for="address" class="title">주소</label>
+				<input type="text" id="address" size="40" required></li>
+				<li><label for="tel2" class="title">전화번호</label>
+				<input type="tel" id="tel2" required></li>
+				<li><label for="memo" class="title">메 모</label>
+				<textarea id="memo" cols="40" rows="3"></textarea></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>주문 정보</legend>
+			<ul>
+				<li><label for="A">
+				<input type="checkbox" id="A">과테말라 안티구아 (100g)</label>
+				<input type="number" value="0" size="3" min="0" max="5">개
+			</li>
+				<li><label for="B">
+				<input type="checkbox" id="B">인도네시아 만델링 (100g)</label>
+				<input type="number" value="0" size="3" min="0" max="5">개
+			</li>
+				<li><label for="C">
+				<input type="checkbox" id="C">탐라는도다(블렌딩) (100g)</label>
+				<input type="number" value="0" size="3" min="0" max="5">개
+			</li>
+			</ul>
+		</fieldset>
+	</div>
+	<div class="center">
+		<button type="submit" value="submit">주문하기</button>
+		<button type="reset" value="reset">다시 작성</button>
+	</div>
+</body>
+</html>

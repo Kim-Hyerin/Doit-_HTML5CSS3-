@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>input type</title>
+</head>
+<body>
+    <h3>type="hidden" - 히든 필드</h3>
+    <input type="hidden"><br>
+    (name, value)<br>
+
+    <h3>type="text" - 텍스트 필드</h3>
+    <input type="text"><br>
+    (name, size, value, maxlength)<br>
+
+
+    <h3>type="password" - 비밀번호 입력란</h3>
+    <input type="password"><br>
+    (name, size, maxlength)<br>
+
+
+    <h3>type="search" - 검색 상자</h3>
+    <input type="search"><br>
+    (value)<br>
+
+
+    <h3>type="url" - URL 입력란</h3>
+    <input type="url"><br>
+    (http://로 시작, 공백x, name, size, value, maxlength)<br>
+
+
+    <h3>type="email" - 메일 주소 입력란</h3>
+    <input type="email"><br>
+    (이메일 형식 자동 체크, name, size, value, maxlength)<br>
+
+
+    <h3>type="tel" - 전화번호 입력란</h3>
+    <input type="tel"><br>
+    (name, size, value, maxlength)<br>
+
+
+    <h3>type="number" - 숫자 입력란</h3>
+    <input type="number"><br>
+    (텍스트 or 스핀 박스, min, max, value, step)<br>
+
+
+    <h3>type="range" - 슬라이드 막대로 숫자 조절</h3>
+    <input type="range"><br>
+    (min, max, value, step)<br>
+
+
+    <h3>type="radio" - 라디오 버튼(하나만 선택 가능)</h3>
+    <input type="radio" name="option" value="rA">option A<br>
+    <input type="radio" name="option" value="rB">option B<br>
+    (name, value-필수 속성(영or숫자), checked)<br>
+    
+
+
+    <h3>type="checkbox" - 체크박스(복수 선택 가능)</h3>
+    <input type="checkbox" name="option" value="cA">option A<br>
+    <input type="checkbox" name="option" value="cB">option B<br>
+    (name, value-필수 속성(영or숫자), checked)<br>
+
+
+    <h3>type="color" - 색상 선택 상자</h3>
+    <input type="color"><br>
+    (지원 브라우저 제한, value-기본 색 설정)
+
+
+    <h3>type="date","month","week" - 날짜 표시</h3>
+    <input type="date"> yyyy-mm-dd<br><br>
+    <input type="month"> yyyy-mm<br><br>
+    <input type="week"> yyyy-W24<br>
+    (min, max, step, value, 브라우저마다 지원 형태가 다름)<br>
+
+
+    <h3>type="time","datetime","datetime-local" - 시간 지정</h3>
+    <input type="time"><br><br>
+    <input type="datetime"><br><br>
+    <input type="datetime-local"><br>
+    (min, max, step, value)<br>
+
+
+    <h3>type="submit","reset" - 서버 전송, 리셋 버튼</h3>
+    <input type="submit"> 폼으로 정보 전송<br><br>
+    <input type="reset"> 재설정<br>
+
+
+    <h3>type="image" - 이미지 버튼</h3>
+    <input type="image"><br>
+    (src="경로" alt="대체 텍스트", submit에 이미지 삽입 가능)
+
+
+    <h3>type="button" - 버튼</h3>
+    <input type="button" value="새 탭 열기" onclick="window.open()">
+    <input type="button" value="닫기" onclick="window.close()"><br>
+    (value, onclick, on...)<br>
+
+
+    <h3>type="file" - 파일 첨부</h3>
+    <input type="file"><br>
+    (버튼 형태는 브라우저에 따라 다름)
+</body>
+</html>
