@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>web color</title>
+    <style>
+        th, td {
+            padding: 5px 8px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .spacing {
+            letter-spacing: 0.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹에서 색상 표현하기</h1>
+    <!--#ffff00처럼 두 자리씩 중복될 경우 #f00으로 줄여서 표기할 수 있음-->
+    <h2>16진수 표기법</h2>
+    <table border="1">
+        <tr>
+            <th style="background-color: rgb(241, 230, 214);">십진수</th>
+                <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td>
+                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(241, 230, 214);">16진수</th>
+                <td>0</td><td>1</td><td>2</td><td>3</td><td>4</td>
+                <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                <td>a</td><td>b</td><td>c</td><td>d</td><td>e</td><td>f</td>
+        </tr>
+    </table><br>
+
+    <h2>rgb와 rgba 표기법</h2>
+    <p>color:rgb(red값, green값, blue값)<br>
+        color:rgba(red값, green값, blue값, alpha값-불투명도)</p><br> <!--alpha: 불투명도 값으로 0부터 1까지의 값-->
+
+    <h2>hsl와 hsla 표기법</h2>
+    <p><b>h</b>ue(색상) <b>s</b>aturation(채도) <b>l</b>ightness(밝기) <b>a</b>lpha(불투명도)<br>
+    <span class="spacing">0˚~360˚, 0%~100%, 0%~100%, 0~1</span></p><br>
+</body>
+</html>
