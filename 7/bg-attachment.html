@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    body {
+      background-image:url('images/bottom-bg.jpg'); /* 배경 이미지 링크 */
+      background-repeat:no-repeat; /* 배경 이미지 반복 없음 */
+      background-position:center bottom; /* 배경 이미지 위치: 중앙 하단 */
+      background-attachment:fixed; /* 화면 스크롤시 배경 고정 */
+    }
+    div {
+      width:300px; /* 셀 너비 */
+      height:auto; /* 셀 높이*/
+      margin:20px auto; /* 셀 바깥쪽 여백 */
+      padding:20px; /* 셀과 내용 사이 여백 */
+    }
+    h1 {
+      background-color:#222; /* h1 태그가 사용된 부분의 배경 색 */
+      color:white; /* h1 글자색 */
+      text-align:center; /* 중앙 정렬 */
+      padding:10px; /* 셀과 내용 사이 여백 */
+    }
+    .accent { color: rgb(84, 84, 202);} /* 강조 색 */
+  </style>
+</head>
+<body>
+  <h2>배경 이미지 고정하기 - <span class="accent">background-attachment</span></h2>
+  <h3>background-attachment : scroll | fixed</h3>
+  <p style="font-size: 1.2em">
+    scroll : 화면 스크롤과 함께 배경 이미지도 스크롤 (default)<br>
+    fixed : 화면이 스크롤되더라도 배경 이미지는 고정<br>
+    (현재 화면에는 이미지를 position center bottom하여 fixed 하였음)
+  </p>
+  <div>
+    <h1>HTML</h1>
+    <p>Irure exercitation ipsum magna proident commodo velit in ut qui mollit.</p>
+  </div>
+  <div>
+    <h1>CSS3</h1>
+    <p>Exercitation fugiat nostrud exercitation duis occaecat tempor. Ex est elit enim nulla voluptate sint nulla ad exercitation cupidatat ad ea. Occaecat ea veniam fugiat ullamco incididunt nulla laborum minim cillum ullamco est dolor dolor dolor. Do fugiat exercitation fugiat do occaecat irure exercitation. Est id ex cupidatat reprehenderit Lorem consequat aute elit eiusmod cillum.</p>
+  </div>
+  <div>
+    <h1>Javascript</h1>
+    <p>Labore et ad elit adipisicing sunt reprehenderit minim anim nulla incididunt. Proident anim dolor proident elit nostrud dolor. Culpa mollit veniam in voluptate ex enim qui dolore consectetur. Quis et sit ex elit commodo. Nulla veniam ipsum veniam est sit proident anim id. Qui elit irure ex duis eiusmod eiusmod mollit non nostrud. Cupidatat veniam consectetur duis reprehenderit dolore.</p>
+  </div>
+ </body>
+</html>

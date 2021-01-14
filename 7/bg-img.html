@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    /* 배경 이미지 형식: jpg, gif, png */
+    body {
+      background-image: url('images/bg2.jpg'); /* 이미지가 채우려는 요소 크기보다 작을 경우, 가득 채울 정도로 가로 세로가 반복 */ 
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    p { font-size: 1.2em;}
+
+    .area {
+      background-image: url('images/bg1.png'); /* 특정 영역에 배경 이미지 지정하기 */
+      width: 40%; 
+      background-size: cover;
+    }
+
+    .accent { color: rgb(84, 84, 202);}
+  </style>
+</head>
+<body>
+  <h2 class="area">배경 이미지 반복 방법 지정하기 - <span class="accent">background-repeat</span></h2>
+  <h3>background-repeat : repeat | repeat-x | repeat-y | no-repeat</h3>
+  <p>
+    repeat : 브라우저 화면에 가득 찰 때까지 배경 이미지를 가로 세로 반복<br>
+    repeat-x : 브라우저 창 너비와 같아질 때까지 배경 이미지를 가로로 반복<br>
+    repeat-y : 브라우저 창 높이와 같아질 때까지 배경 이미지를 세로로 반복<br>
+    no-repeat : 배경 이미지를 한 번만 표시하고 반복하지 않음
+  </p>
+  <h2 class="area">배경 이미지 크기 조절하기 - <span class="accent">background-size</span></h2>
+  <h3>background-size : auto | contain | cover | &lt;크기 값&gt; | &lt;백분율&gt;</h3>
+  <p>
+    auto : 원래 배경 이미지 크기만큼 표시<br>
+    contain : 요소 안에 배경 이미지가 다 들어오도록 이미지를 확대/축소<br>
+    cover : 배경 이미지로 요소를 모두 덮도록 이미지를 확대/축소<br>
+    &lt;크기 값&gt; : 너비 값과 높이 값 지정, 값을 하나만 지정할 경우 비율 자동 계산<br>
+    &lt;백분율&gt; : 배경 이미지가 들어갈 요소의 크기를 기준으로 백분율 값을 지정하고 그 크기에 맞도록 이미지 확대/축소
+  </p>
+</body>
+</html>

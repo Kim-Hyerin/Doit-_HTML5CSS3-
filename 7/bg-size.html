@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    div{
+      width:500px;
+      height:500px;
+      border:2px double black;
+			margin-bottom:20px;
+    }
+    .bg1{
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:auto;
+    }
+    .bg2 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:200px 150px;
+    }
+    .bg3 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:90% 80%;
+    }
+    .bg4 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:contain;
+    }
+     .bg5 {
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:cover;
+    }
+    .bg6{
+      background:url('images/bg4.jpg') no-repeat left top;
+      background-size:100% 100%;
+    }
+  </style>
+</head>
+<body>
+  <h3>auto : 원래 배경 이미지 크기</h3>
+  <div class="bg1"></div>
+  <h3>200px 150px : 너비 높이 지정</h3>
+  <div class="bg2"></div>
+  <h3>90% 80% : 요소를 채울 크기</h3>
+  <div class="bg3"></div>
+  <h3>contain : 모두 표시되도록 자동 확대/축소</h3>
+  <div class="bg4"></div>
+  <h3>cover : 요소를 모두 덮도록 자동 확대/축소</h3>
+  <div class="bg5"></div>
+  <h3>100% 100% : 요소의 너비와 높이에 맞춤</h3>
+	<div class="bg6"></div>
+ </body>
+</html>

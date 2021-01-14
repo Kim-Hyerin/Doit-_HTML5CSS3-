@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    div {
+      position: relative;
+      margin-bottom:20px;
+    }
+    button {
+      left:20%; /*  */
+      width:140px; /* 버튼 너비 */
+      height:50px; /* 버튼 높이 */
+      background-color: rgb(0, 110, 255); /* 버튼 배경색 */
+      border:1px solid rgb(0,110,255); /* 버튼 테두리 굵기, 모양, 색상 */
+      border-radius:8px; /* 테두리 둥글게 */
+      color:#fff; /* 글자 색 */
+      font-weight:bold; /* 글자 굵게 */
+   }    
+    #bg1 {
+      background-image:url('images/light.png'); /* 배경 이미지 링크 */
+      background-repeat:no-repeat; /* 배경 이미지 반복 없음 */
+      background-position:5px 7px; /* 배경 이미지 위치- 수평5px 수직7px인 지점 */
+    }
+    #bg2 {
+      background-image:url('images/light.png'); /* 배경 이미지 링크 */
+      background-repeat:no-repeat; /* 배경 이미지 반복 없음 */
+      background-position: right center; /* 배경 이미지 위치- 수평:오른쪽/수직:중앙 */
+    }
+    .accent { color: rgb(84, 84, 202);} /* 강조 글자 색상 */
+    p { font-size: 1.2em;} /* 문단 글자 크기 */
+  </style>
+</head>
+<body>
+  <h2>배경 이미지 위치 조절하기 - <span class="accent">background-position</span></h2>
+  <h3>background-position : &lt;수평 위치&gt; &lt;수직 위치&gt;</h3>
+  <p>
+    수평 위치 : left | center | right | &lt;백분율&gt; | &lt;길이 값&gt;<br>
+    수직 위치 : top | center | bottom | &lt;백분율&gt; | &lt;길이 값&gt;
+  </p>
+  <div>
+    <button id="bg1"> 
+      IDEA
+    </button> 5px 7px
+  </div>
+  <div>
+    <button id="bg2">
+      IDEA
+    </button> right center
+  </div>
+ </body>
+</html>
