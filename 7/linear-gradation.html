@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>bg-gradation</title>
+    <style>
+        div {
+			width:500px;
+			height:300px;
+			border-radius:10px;
+		}
+        .grad {
+            background: blue; /* 그러데이션을 지원하지 않는 브라우저용 */
+            background: -webkit-linear-gradient(); /* 사파리 */
+            background: -moz-linear-gradient(); /* 파이어폭스 */
+            background: -o-linear-gradient(); /* 오페라 */
+            background: linear-gradient(); /* 선형 그러데이션 표준 구문 */
+        }
+        .gradpos {
+  		background: blue; /* css3 미지원 브라우저 */
+		/* 초기 모던 브라우저 */
+  		background: -webkit-linear-gradient(left top, blue, white); /* 사파리-시작 위치 기준 */ 
+  		background: -moz-linear-gradient(right bottom, blue, white); /* 파이어폭스-끝 위치 기준, to 사용하지 않음 */
+  		background: -o-linear-gradient(right bottom, blue, white); /* 오페라-끝 위치 기준, to 사용하지 않음 */
+  		background: linear-gradient(to right bottom, blue, white); /* 최신 모던 브라우저, to 사용 */
+  	    }
+        .graddeg {
+        /* 45도 (오른쪽 위) 방향으로, 빨강에서 흰색으로 */
+  		background: #ff0000;
+  		background: -webkit-linear-gradient(45deg, #ff0000, #ffffff);
+  		background: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+  		background: -o-linear-gradient(45deg, #ff0000, #ffffff);
+  		background: linear-gradient(45deg, #ff0000, #ffffff);
+  	    }
+        .gradcs {
+        /* 시작위치, 시작 색상, 중지 점 색상과 위치, 끝 색상 */
+  		background: #06f;
+  		background-image: -webkit-linear-gradient(top, #06f, white 30%, #06f);
+  		background-image: -moz-linear-gradient(bottom, #06f, white 30%, #06f);
+  		background: -o-linear-gradient(bottom, #06f, white 30%, #06f);
+  		background: linear-gradient(to bottom, #06f, white 30%, #06f);
+  	    }
+        p { font-size: 1.2em;}
+    </style>
+</head>
+<body>
+    <h2>선형 그러데이션</h2>
+    <h3>linear-gradient( &lt;각도&gt; &lt;방향&gt;, color-stop, [color-stop,..])</h3>
+    
+    <p>
+        방향<br>
+        끝 지점을 기준으로 'to'와 함께 사용 (to top/left/right/bottom)
+        <div class="gradpos"></div><br>
+    </p>
+    <p>
+        각도<br>
+        끝나는 각도 기준 0˚~360˚deg, '45deg red-white'
+        <div class="graddeg"></div><br>
+    </p>
+    <p>
+        색상 중지 점(color-stop)<br>
+        바뀌는 지점의 색상+위치 지정 가능
+        <div class="gradcs"></div><br>
+    </p>
+</body>
+</html>

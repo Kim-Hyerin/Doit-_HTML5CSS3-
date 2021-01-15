@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>원형 그러데이션</title>
+  <style>
+	div {
+		width:500px;
+		height:300px;
+		margin:10px;
+	}
+    .grad1{
+		background:skyblue;
+	  background:-webkit-radial-gradient(red, yellow, skyblue);
+		background:-moz-radial-gradient(red, yellow, skyblue);
+		background:-o-radial-gradient(red, yellow, skyblue);
+		background:radial-gradient(red, yellow,skyblue);
+    }
+    .grad2{
+		background:skyblue;
+	    background:-webkit-radial-gradient(red, yellow 20%, skyblue);
+		background:-moz-radial-gradient(red, yellow 20%, skyblue);
+		background:-o-radial-gradient(red, yellow 20%, skyblue);
+		background:radial-gradient(red, yellow 20%, skyblue);
+    }
+	p { font-size: 1.2em;}
+  </style>
+</head>
+<body>
+	<h2>색상 중지 점(color-stop) : 색상+색상이 바뀌는 위치 지정 가능</h2>
+	<h3>색상 중지 점의 위치를 지정하지 않았을 때</h3>
+	<div class="grad1"></div>
+	<h3>색상 중지 점의 위치를 지정했을 때</h3>
+  	<div class="grad2"></div>
+ </body>
+</html>
