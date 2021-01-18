@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>radius</title>
+	<style>
+		div {
+			width:200px;
+			height:100px;
+			display:inline-block;
+			margin:15px;
+			border:2px solid black;
+			background:#ffd800;			
+		}
+		.round1 { border-top-left-radius:100px 50px; } /* 왼쪽 위 라운딩 */
+		.round2 { border-bottom-right-radius:50% 30%; }
+		.round3 { border-top-right-radius:50px;}
+	</style>
+</head>
+<body>
+	<h2>타원 형태로 둥글게 만들기 - 가로 반지름 / 세로 반지름</h2>
+	<h3>border-top-left-radius 가로 100px / 세로 50px</h3>
+	<div class="round1"></div>
+	<h3>border-bottom-right-radius 가로 50% / 세로 30%</h3>
+	<div class="round2"></div>
+	<h3>border-top-right-radius 가로 50px / 세로 50px</h3>
+  <div class="round3"></div>
+</body>
+</html>
