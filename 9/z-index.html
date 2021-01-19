@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>z-index 속성</title>
+		<style>
+			div#wrapper {
+				position: relative;
+			}
+			.box {
+				position:absolute;
+				width:100px;
+				height:100px;
+				font-size:20px;
+			}
+			#b1 {				
+				left:50px;
+				top:50px;
+				background:#ff0000;
+				z-index:1; /* 1번째로 쌓임 */
+			}
+			#b2 {				
+				left:110px;
+				top:70px;
+				background:#ffd800;
+				z-index:2; /* 2번째로 쌓임 */
+			}
+			#b3 {
+				left:70px;
+				top:110px;
+				background:#0094ff;
+				z-index:3; /* 3번째로 쌓임 */
+			}
+		</style>
+	</head>
+	<body>
+		<h2>z-index 속성</h2>
+		<h4>페이지 맨 앞에 표시해야 한다면 z-index:999나 1000처럼 매우 큰 값을 사용하기도 함</h4>
+		<div id="wrapper">
+			<div id="b1" class="box">1</div>
+			<div id="b2" class="box">2</div>
+			<div id="b3" class="box">3</div>
+		</div>
+	</body>
+</html>

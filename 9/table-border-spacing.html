@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>table border-spacing</title>
+    <style>
+			body{
+				font-family:"맑은 고딕", "고딕", "굴림";
+			}
+			table {
+				margin-bottom:50px;
+			}
+			.table1 {
+				border:1px solid black;
+				border-collapse:separate;
+				border-spacing:20px 10px;
+			}
+			.table2 {
+				border-collapse:separate;
+				border-spacing:20px 10px;				
+			}
+			td {
+        border:1px solid black;
+        padding:10px;
+        text-align:center;
+	  }
+	  .accent {
+		  color: rgb(82, 82, 202);
+	  }
+		</style>
+	</head>
+	<body>
+		<h2>인접한 셀 테두리 사이 거리 지정하기 <span class="accent">border-spacing</span> : (수평거리/수직거리)</h2>
+		<h3>separate를 사용해 셀 분리했을 경우, 거리를 지정한다</h3>
+		<h3>border-spacing: 20px 10px</h3>
+		<table class="table1">
+			<caption>프로축구 경기 일정</caption>
+			<tr>
+				<td>울산</td>
+				<td>울산 vs 인천</td>
+			</tr>		
+			<tr>
+				<td>부산</td>
+				<td>부산 vs 대전</td>
+			</tr>		
+			<tr>
+				<td>서울</td>
+				<td>서울 vs 강원</td>
+			</tr>		
+		</table>
+		<h3>border-spacing: 20px 10px</h3>
+		<table class="table2">
+				<caption>프로축구 경기 일정</caption>
+				<tr>
+					<td>울산</td>
+					<td>울산 vs 인천</td>
+				</tr>		
+				<tr>
+					<td>부산</td>
+					<td>부산 vs 대전</td>
+				</tr>		
+				<tr>
+					<td>서울</td>
+					<td>서울 vs 강원</td>
+				</tr>		
+			</table>
+	</body>	
+</html>

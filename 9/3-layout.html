@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>3단 레이아웃</title>
+    <style>
+        div {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        #container {
+            width: 970px;
+            margin: 10px auto; /* 화면 중앙에 배치 */
+        }
+        #header {
+            margin: 20px 0px;
+        }
+        #content {
+            float: left;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+        #left-sidebar {
+            float: left;
+            width: 150px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+        #right-sidebar {
+            float: right;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        #footer {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>사이트 제목</h1>
+        </div>
+        <div id="left-sidebar">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>본문</h2>
+            <p>대통령의 선거에 관한 사항은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 통신·방송의 시설기준과 신문의 기능을 보장하기 위하여 필요한 사항은 법률로 정한다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며, 그 정치적 중립성은 준수된다.</p>
+
+            <p>대통령이 궐위된 때 또는 대통령 당선자가 사망하거나 판결 기타의 사유로 그 자격을 상실한 때에는 60일 이내에 후임자를 선거한다. 피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.</p>
+
+            <p>대통령은 국가의 안위에 관계되는 중대한 교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고 국회의 집회가 불가능한 때에 한하여 법률의 효력을 가지는 명령을 발할 수 있다. 대한민국의 경제질서는 개인과 기업의 경제상의 자유와 창의를 존중함을 기본으로 한다. 국가는 농업 및 어업을 보호·육성하기 위하여 농·어촌종합개발과 그 지원등 필요한 계획을 수립·시행하여야 한다.</p>
+        </div>
+        <div id="right-sidebar">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>저작권 정보</p>
+            <p>연락처 등</p>
+        </div>
+    </div>
+</body>
+</html>
