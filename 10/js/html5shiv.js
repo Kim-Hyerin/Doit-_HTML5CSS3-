@@ -1,4 +1,6 @@
 /**
+* IE8 이하 버전에서 시맨틱 태그 인식하는 소스 *
+* [if lt IE 9] <script src="js/html5shiv.js"></script> [endif] / IE9 보다 이전 버전일 경우 실행하라는 의미 *
 * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 */
 ;(function(window, document) {
