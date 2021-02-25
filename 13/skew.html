@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			.origin {
+				width: 160px;
+				height: 240px;
+				border: 1px solid black;
+				float: left;
+				margin: 100px;
+			}
+            .skewx:hover {
+                -webkit-transform: skewX(30deg);
+                -ms-transform: skewX(30deg);
+                -moz-transform: skewX(30deg);
+                -o-transform: skewX(30deg);
+                transform: skewX(30deg); /* x축 기준으로 30도 왜곡 */
+            }
+            .skewy:hover {
+                -webkit-transform: skewY(15deg);
+                -ms-transform: skewY(15deg);
+                -moz-transform: skewY(15deg);
+                -o-transform: skewY(15deg);
+                transform: skewY(15deg); /* y축 기준으로 15도 왜곡 */
+            }
+            .skewxy:hover {
+                -webkit-transform: skew(-25deg, -15deg);
+                -ms-transform: skew(-25deg, -15deg);
+                -moz-transform: skew(-25deg, -15deg);
+                -o-transform: skew(-25deg, -15deg);
+                transform: skew(-25deg, -15deg); /* x축 기준으로 -25도, y축 기준으로 -15도 왜곡 */
+            }
+		</style>
+	</head>
+	<body>
+		<h2>skew x 30deg</h2>		
+		<div class="origin">
+			<div class="skewx">
+				<img src="images/rose.jpg">
+			</div>
+		</div>
+		<h2>skew y 15deg</h2>	
+		<div class="origin">
+			<div class="skewy">
+				<img src="images/rose.jpg">
+			</div>
+		</div>
+		<h2>skew xy -25deg, -15deg</h2>	
+		<div class="origin">
+			<div class="skewxy">
+				<img src="images/rose.jpg">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			.origin {
+				width: 160px;
+				height: 240px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+            .rose {
+                -moz-transform: rotateZ(10deg);
+                -ms-transform: rotateZ(10deg);
+                -o-transform: rotateZ(10deg);
+                -webkit-transform: rotateZ(10deg);
+                transform: rotateZ(10deg); /* 10도만큼 회전 */
+            }
+            .ltop .rose {
+                -webkit-transform-origin: left top;
+                -ms-transform-origin: left top;
+                -moz-transform-origin: left top;
+                -o-transform-origin: left top;
+                transform-origin: left top; /* x, y축 변형 기준점 설정 */
+            }
+            .rtop .rose {
+                -webkit-transform-origin: right top;
+                -ms-transform-origin: right top;
+                -moz-transform-origin: right top;
+                -o-transform-origin: right top;
+                transform-origin: right top; /* x, y축 변형 기준점 설정 */
+            }
+            .lbottom .rose {
+                -webkit-transform-origin: left bottom;
+                -ms-transform-origin: left bottom;
+                -moz-transform-origin: left bottom;
+                -o-transform-origin: left bottom;
+                transform-origin: left bottom; /* x, y축 변형 기준점 설정 */
+            }
+            .rbottom .rose {
+                -webkit-transform-origin: right bottom;
+                -ms-transform-origin: right bottom;
+                -moz-transform-origin: right bottom;
+                -o-transform-origin: right bottom;
+                transform-origin: right bottom; /* x, y축 변형 기준점 설정 */
+            }
+		</style>
+	</head>
+	<body>
+        <h1>transform-origin 속성 - 변형 기준점 설정하기</h1>
+        <h2>transform-origin: left top기준으로 변형</h2>		
+		<div class="origin">
+			<div class="ltop">
+				<img src="images/rose.jpg" class="rose">
+			</div>
+		</div>
+        <h2>transform-origin: right top기준으로 변형</h2>	
+		<div class="origin">
+			<div class="rtop">
+				<img src="images/rose.jpg" class="rose">
+			</div>
+		</div>
+        <h2>transform-origin: left bottom기준으로 변형</h2>	
+		<div class="origin">
+			<div class="lbottom">
+				<img src="images/rose.jpg" class="rose">
+			</div>
+		</div>
+        <h2>transform-origin: right bottom기준으로 변형</h2>	
+		<div class="origin">
+			<div class="rbottom">
+				<img src="images/rose.jpg" class="rose">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			h1 {font-size:60px;}
+			div {
+				width:200px;
+				height:200px;
+			}
+			.container{
+				border:1px solid black;				
+				perspective:300px; /* 원근감 */
+				margin-top:100px;
+				margin-left:100px;
+				float:left;
+			}
+            .box {
+                background: #82cbd8;
+                -webkit-transform: rotateY(135deg);
+                -moz-transform: rotate(135deg);
+                -ms-transform: rotateY(135deg);
+                -o-transform: rotateY(135deg);
+                transform: rotateY(135deg); /* Y축기준 135도 회전 */
+            }
+			#back1 {
+				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
+				backface-visibility: hidden; /* 요소 뒷면 표시하지 않음 */
+			}
+			#back2 {
+				-webkit-backface-visibility: visible;
+				-moz-backface-visibility: visible;
+				backface-visibility: visible; /* 요소 뒷면 표시 */
+			}
+		</style>
+	</head>
+	<body>
+		<h2>backface-visibility 속성 - 요소의 뒷면 표시하기</h2>
+			
+		<div class="container">
+			<div class="box" id="back1">
+				<h1>BACK</h1>
+			</div>
+			<h3>hidden</h3>	
+		</div>
+		<div class="container">
+			<div class="box" id="back2">
+				<h1>BACK</h1>
+			</div>
+			<h3>visible</h3>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+    <style>
+			.origin {
+				width: 210px;
+				height: 200px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+            .rotate1:hover {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg); /* 양수, 시계방향 20도 회전 */
+            }
+            .rotate2:hover {
+                -webkit-transform: rotate(-40deg);
+                -ms-transform: rotate(-40deg);
+                -moz-transform: rotate(-40deg);
+                -o-transform: rotate(-40deg);
+                transform: rotate(-40deg); /* 음수, 반시계방향 40도 회전 */
+            }
+		</style>
+	</head>
+	<body>
+		<h1>rotate 2차원 함수</h1>
+		<h2>rotate20</h2>		
+		<div class="origin">
+			<div class="rotate1">
+				<img src="images/fruit.jpg">
+			</div>
+		</div>
+		<h2>rotate-40</h2>		
+		<div class="origin">
+			<div class="rotate2">
+				<img src="images/fruit.jpg">
+			</div>
+		</div>
+	</body>
+</html>
