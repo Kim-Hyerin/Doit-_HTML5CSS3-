@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	h1 {
+		text-align:center;
+		font-size:52px;
+	}
+	.tr1 {
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		border: 1px solid black;
+		-webkit-transition-property: background-color, transform, width, height;
+		-moz-transition-property: background-color, transform, width, height;
+		-o-transition-property: background-color, transform, width, height;
+		transition-property: background-color, transform, width, height; /* 트랜지션 대상 - 배경 색, 회전, 너비, 높이 */
+		-webkit-transition-duration: 2s, 3s;
+		-moz-transition-duration: 2s, 3s;
+		-o-transition-duration: 2s, 3s;
+		transition-duration: 2s, 3s; /* 반복 적용 - 배경 색 2s, 회전 3s, 너비 2s, 높이 3s */
+	  }
+	.tr1:hover {
+		width: 200px; /* 너비 변경 */
+		height: 200px; /* 높이 변경 */
+		background-color: #ff6e5f; /* 색상 변경 */
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg); /* 180도 회전 */			
+	}
+</style>
+</head>
+
+<body>
+	<h2>transition</h2>
+	<div class="tr1"><h1>!</h1> </div>
+</body>
+</html>

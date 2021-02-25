@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	.tr1 {
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		border: 1px solid black;
+		-webkit-transition: 2s ease-in;
+		-moz-transition: 2s ease-in;
+		-o-transition: 2s ease-in;
+		transition: 2s ease-in; /* 모든 요소의 실행 시간 2초, 느리게 시작 */
+	}
+	.tr1:hover {
+		width: 100px; /* 너비 변경 */
+		height: 100px; /* 높이 변경 */
+		background-color: #ff6e5f; /* 배경 색 변경 */
+		-webkit-transform: rotate(270deg);
+		-moz-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		transform: rotate(270deg); /* 270도 회전 */	
+	}
+</style>
+</head>
+
+<body>
+	<h2>transition-timing-function 속성 - 트랜지션 속도 곡선 지정하기</h2>
+	<table border="1 black solid">
+		<tr>
+			<th>속성 값</th>
+			<th>설명</th>
+		</tr>
+		<tr>
+			<td>linear</td>
+			<td>시작부터 끝까지 똑같은 속도로 트랜지션 실행</td>
+		</tr>
+		<tr>
+			<td>ease</td>
+			<td>처음에는 천천히 시작하고 점점 빨라지다가 마지막에 천천히 끝냄, default</td>
+		</tr>
+		<tr>
+			<td>ease-in</td>
+			<td>시작을 느리게 합니다</td>
+		</tr>
+		<tr>
+			<td>ease-out</td>
+			<td>느리게 끝냅니다</td>
+		</tr>
+		<tr>
+			<td>ease-in-out</td>
+			<td>느리게 시작하고 느리게 끝냅니다</td>
+		</tr>
+		<tr>
+			<td>cubic-bezier(n,n,n,n)</td>
+			<td>베지에 함수를 직접 정의해 사용, n은 0~1 사용 가능</td>
+		</tr>
+	</table>
+	<h3>transition: 2s ease-in</h3>
+	<div class="tr1"></div>
+</body>
+</html>
