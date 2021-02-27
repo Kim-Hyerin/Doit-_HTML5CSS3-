@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: blue;
+		-webkit-animation-name: change-bg;
+		-moz-animation-name: change-bg;
+		-o-animation-name: change-bg;
+		animation-name: change-bg; /* keyframes 이름 지정 */
+		-webkit-animation-duration: 3s;
+		-moz-animation-duration: 3s;
+		-o-animation-duration: 3s;
+		animation-duration: 3s; /* 애니메이션 실행시간 지정 */
+	}
+
+	@-webkit-keyframes change-bg{ /* keyframes도 브라우저 호환 접두사 필요 */
+		from { /* 중간 지점 없이 시작과 끝 부분 지정시 0%,100% 대신 from~to 사용 가능 */
+			background-color:blue; /* 애니메이션 시작 시점 스타일 */
+			border:1px solid black;
+		}
+		to {
+			background-color:#a5d6ff; /* 애니메이션 끝 시점 스타일 */
+			border-radius:50%;
+		}
+	}
+	@-moz-keyframes change-bg {
+		from {
+			background-color: blue;
+			border: 1px solid black;
+		}
+		to {
+			background-color: #a5d6ff;
+			border-radius: 50%;
+		}
+	}
+	@-o-keyframes change-bg {
+		from {
+			background-color: blue;
+			border: 1px solid black;
+		}
+		to {
+			background-color: #a5d6ff;
+			border-radius: 50%;
+		}
+	}
+	@keyframes change-bg {
+		from {
+			background-color: blue;
+			border: 1px solid black;
+		}
+		to {
+			background-color: #a5d6ff;
+			border:1px solid blue;
+			border-radius: 50%;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div></div>
+</body>
+</html>

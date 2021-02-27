@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+	.box {
+		margin-top: 50px;
+		margin-left: 100px;
+		padding: 20px;
+		height: 60px;
+		-webkit-animation-name: moving;
+		-moz-animation-name: moving;
+		-o-animation-name: moving;
+		animation-name: moving; /* 애니메이션 이름 지정 */
+		-webkit-animation-duration: 3s;
+		-moz-animation-duration: 3s;
+		-o-animation-duration: 3s;
+		animation-duration: 3s; /* 애니메이션 실행 시간 지정 */
+		-webkit-animation-direction: normal;
+		-moz-animation-direction: normal;
+		-o-animation-direction: normal;
+		animation-direction: normal; /* 애니메이션 방향 지정 - 원래대로 돌아가기(default) */
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		animation-iteration-count: infinite; /* 애니메이션 반복 횟수 지정 - 무한 반복 */
+	}
+
+	@-webkit-keyframes moving {
+		from {
+			width: 200px;
+			background: #faef7c;
+			opacity: 0.5;
+			transform: scale(0.5) rotate(15deg);
+		}
+
+		to {
+			width: 400px;
+			background: #ff9400;
+			opacity: 1;
+			transform: scale(1) rotate(0deg);
+		}
+	}
+
+	@-moz-keyframes moving {
+		from {
+			width: 200px;
+			background: #faef7c;
+			opacity: 0.5;
+			transform: scale(0.5) rotate(15deg);
+		}
+
+		to {
+			width: 400px;
+			background: #ff9400;
+			opacity: 1;
+			transform: scale(1) rotate(0deg);
+		}
+	}
+
+	@-o-keyframes moving {
+		from {
+			width: 200px;
+			background: #faef7c;
+			opacity: 0.5;
+			transform: scale(0.5) rotate(15deg);
+		}
+
+		to {
+			width: 400px;
+			background: #ff9400;
+			opacity: 1;
+			transform: scale(1) rotate(0deg);
+		}
+	}
+
+	@keyframes moving {
+		from { /* 시작 시점 스타일 */
+			width: 200px;
+			background: #faef7c;
+			opacity: 0.5;
+			transform: scale(0.5) rotate(15deg);
+		}
+
+		to { /* 끝 시점 스타일 */
+			width: 400px; /* 너비 변경 */
+			background: #ff9400; /* 배경 색 변경 */
+			opacity: 1; /* 불투명도 */
+			transform: scale(1) rotate(0deg); /* 확대, 회전 */
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div class="box">
+		<h3>CSS3 Animation</h3>
+	</div>
+</body>
+</html>
