@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>CSS3 트랜스폼과 트랜지션</title>
+	<style>	
+	.photo {	
+        margin-top:50px;	
+	    margin-left:100px;
+	}
+	.photo:hover {
+		box-shadow: 5px 5px 3px #000; /* 그림자 속성 */
+
+		-moz-transition: all 1s;
+		-ms-transition: all 1s;
+		-o-transition: all 1s;
+		-webkit-transition: all 1s;
+		transition: all 1s; /* 트랜지션 대상, 실행 시간 */
+
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5); /* 1.5배 확대 */
+
+		-moz-transform-origin: left top;
+		-ms-transform-origin: left top;
+		-o-transform-origin: left top;
+		-webkit-transform-origin: left top;
+		transform-origin: left top; /* 변형 기준점 */
+	}
+	</style>
+</head>
+<body>
+	<img src="images/lamp.jpg" width="250" height="188"  class="photo">	
+</body>
+</html>
