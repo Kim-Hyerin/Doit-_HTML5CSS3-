@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Fluid font</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		/* em 단위를 계속 사용하면 부모 요소의 크기에 따라 자식 요소의 글자 크기가 변함 - em 수치가 계속 달라진다는 단점 */
+		#wrapper {
+			width:96%;
+			margin:0 auto;
+			font-size:12px; /* 부모 요소 */
+		}
+			.header-text{
+				font-size:2em; /* #wrapper의 자식 요소 : 1em = 12px ; 2em = 24px*/
+				text-align:center;
+			}
+    			.fluid-text {
+      				font-size:1.5em; /* .header-text의 자식 요소 : 1em = 24px ; 1.5em = 36px */
+    			}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="header-text">
+      <p> 가변 글꼴 </p>
+			<p class="fluid-text"> 가변 폰트 </p>
+		</header>
+	</div>
+</body>
+</html>
