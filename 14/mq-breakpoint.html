@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 단말기 크기와 뷰포트 크기를 하나로 통일해 사용하기 위해 뷰포트 지정시 width=device-width로 놓고 사용 -->
+<!-- 다양한 모바일기기 해상도 : http://mobiphonespec.com/cellphone-screen-resolution.php -->
+<style>
+    @media only screen and (min-width: 320px){
+        /* 스마트폰 세로 */
+    }
+    
+    @media only screen and (min-width: 480px){
+        /* 스마트폰 가로 */  
+    }
+    
+    @media only screen and (min-width: 768px){
+        /* 태블릿 세로 */
+    }
+    
+    @media only screen and (min-width: 1024px){
+        /* 태블릿 가로 / 데스크톱 */
+    }
+
+    @media tv and (min-width: 700px) and (orientation: landscape){
+        /* 최소 너비가 700px 이상이고 가로 화면인 TV */
+        body {
+            background-color: orange;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <h1>break point</h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 단말기 크기와 뷰포트 크기를 하나로 통일해 사용하기 위해 뷰포트 지정시 width=device-width로 놓고 사용 -->
+<style>
+	/* 기기별 뷰포트 크기 확인 사이트 : http://viewportsizes.com/ */
+    /* 미디어 쿼리 조건 상세 사이트 : https://www.w3.org/TR/css3-mediaqueries/ */
+	/* 색상당 비트 수 */
+	body {
+		background-color:#eee;
+	}
+    @media all and (color) {
+        /* 컬러를 지원하면 실행 */
+    }
+    @media all and (color:0) {
+        /* 컬러를 지원하지 않으면 실행 */
+    }
+    @media all and (color:3) {
+        /* 8비트 색상이라면 실행 */
+    }
+    @media all and (min-color:3) {
+        /* 8비트 이상 색상이라면 실행 */
+    }
+</style>
+</head>
+
+<body>
+		<h1>Meida Query</h1>
+</body>
+</html>
