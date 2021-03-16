@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+		#container {
+			width: 500px;
+			height: 100px;
+			margin: 0 auto 20px;
+			display: flex;
+			align-items:center;
+			border: 2px solid black;
+		}			
+		#container div {
+			width:100px;
+			border: 2px solid black;
+			background:#ccc;
+		}
+		/* align-self: 교차축 기준의 배치 방법 지정하기 */
+		#box1 {
+			align-self:flex-start;
+			/* 전체 중 특정 플렉스 항목만 배치 방법 바꾸기(개별 스타일) */
+		}
+		h1 {
+			text-align:center;
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-self : flex-start</h1>
+	<h3>사용 가능한 속성 값 : auto, 그 외 align-items 속성값과 동일</h3>
+	<div id="container">
+		<div id="box1"><p>1</p></div>
+		<div id="box2"><p>2</p></div>
+		<div id="box3"><p>3</p></div>
+	</div>
+
+</body>
+</html>

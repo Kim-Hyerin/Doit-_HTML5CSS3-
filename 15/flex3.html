@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+        #container {
+            width: 500px; /* 플렉스 컨테이너 너비 */
+            height: 300px;
+            margin: 0 auto;
+			display: -webkit-box; /* iOS 6 이하, 사파리 3.1 */
+			display: -moz-box; /* 파이어폭스 19 이하 */
+			display: -ms-flexbox; /* IE 10 */
+			display: -webkit-flex; /* 웹킷 구 버전 */
+            display: flex; /* 표준 스펙 */
+            -ms-flex-wrap: wrap; 
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; /* 플렉스 항목 여러 줄로 배치 */
+            border: 2px solid black;
+        }	
+		#container div {
+			width:200px; /* 플렉스 항목 너비 */
+			border: 2px solid black;
+			background:#ccc;
+		}
+		h2 {
+			font-size:20px;
+			font-weight:bold;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1"><h2>1</h2></div>
+		<div id="box2"><h2>2</h2></div>
+		<div id="box3"><h2>3</h2></div>
+	</div>
+</body>
+</html>

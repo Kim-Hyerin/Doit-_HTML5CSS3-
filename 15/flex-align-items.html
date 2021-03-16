@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+		.wrapper {
+			width: 500px;
+			height: 100px;
+			margin: 0 auto 20px;
+			display: flex;
+			border: 2px solid black;
+		}
+		/* align-items: 교차축 기준의 배치 방법 지정하기 */
+		#container1 {
+			align-items: stretch;
+			/* 플렉스 항목을 확장해 교차축을 꽉 채우기(default) */
+		}	
+		#container2 {
+			align-items:flex-start;
+			/* 교차축의 시작점 기준 배치 */
+		}
+		#container3 {
+			align-items: flex-end;
+			/* 교차축의 끝점 기준 배치 */
+		}
+		#container4 {
+			align-items: center;
+			/* 교차축의 중앙 기준 배치 */
+		}
+		#container5 {
+			align-items: baseline;
+			/* 교차축의 시작점과 글자 기준선이 가장 먼 플렉스 항목을 시작점에 배치
+			또한 그 글자의 기준선과 다른 항목의 기준선을 맞추어 배치 */
+		}					
+		.wrapper div {
+			width:100px;
+			border: 2px solid black;
+			background:#ccc;
+		}
+		h1 {
+			text-align:center;
+		}
+		p {
+			font-weight:bold;
+			text-align:center;
+			font-weight:bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>align-items : stretch(기본값)</h1>
+	<div id="container1" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : flex-start</h1>
+	<div id="container2" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : flex-end</h1>
+	<div id="container3" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : center</h1>
+	<div id="container4" class="wrapper">
+		<div><p>1</p></div>
+		<div><p>2</p></div>
+		<div><p>3</p></div>
+	</div>
+	<h1>align-items : baseline</h1>
+	<div id="container5" class="wrapper">
+		<div><p style="font-size:14px">1</p></div>
+		<div><p style="font-size:20px">2</p></div>
+		<div><p style="font-size:16px">3</p></div>
+	</div>
+</body>
+</html>
